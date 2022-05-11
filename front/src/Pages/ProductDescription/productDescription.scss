@@ -1,0 +1,89 @@
+.customRow::after {
+    display: table;
+    clear: both;
+}
+
+.customColumn1 {
+    float: left;
+    width: 40%;
+}
+
+.customColumn2 {
+    float: left;
+    width: 30%;
+}
+
+.customColumn3 {
+    float: left;
+    width: 20%;
+}
+
+.customColumn4 {
+    float: left;
+    width: 10%;
+}
+
+.adminColumn{
+    float:left;
+    width:30%;
+}
+.imagePanel {
+    padding: 10px;
+
+    img {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.descriptionPanel {
+    padding: 0px 15px;
+    text-align: center;
+
+}
+
+.pricingPanel {
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.spanPlan {
+    color: blue;
+
+    &:hover {
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.addToCartButton {
+    background-color: rgb(252, 189, 118);
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(255, 174, 82);
+        cursor: pointer;
+    }
+}
+
+.cartPanel {
+    text-align: center;
+}
+
+.thumbnail {
+    border-radius: 20%;
+    /* Rounded border */
+    padding: 5px;
+    /* Some padding */
+    width: 50%;
+
+    &:hover {
+        cursor:pointer;
+        transform: scale(1.25);
+    }
+}

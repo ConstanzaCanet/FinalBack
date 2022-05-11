@@ -1,0 +1,101 @@
+/*GENERALS*/
+.mainContainer {
+    padding: 0 10px;
+}
+
+/*NAVBAR*/
+.navbar {
+    display: flex;
+}
+
+.navbarBrand {
+    img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+}
+
+.link {
+    color: #96bcf2;
+    text-decoration: none;
+
+    &:hover {
+        color: #434b57
+    }
+}
+
+.activeLink {
+    @extend .link;
+    color: rgb(247, 80, 80);
+
+    &:hover {
+        color: rgb(247, 80, 80);
+    }
+}
+
+.navbarMenu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    a {
+        display: inline;
+        font-size: 2rem;
+    }
+}
+
+.navbarProfile {
+
+}
+.mainIcon{
+    width: 75px;
+    height: 55px;
+    object-fit: fill;
+    position: relative;
+    right: 70%;
+    top:75%;
+    transform: translateY(90%);
+}
+.userIcon{
+    @extend .mainIcon;
+    object-fit: cover;
+    width:55px;
+    right:110%;
+    border-radius:50%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    right:-5em;
+    top:5em;
+    z-index: 100;
+}
+.dropdown:hover .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    margin-right:100px;
+}
+.dropdownButton{
+    border:none;
+    background:#96bcf2;
+    border-radius:5px;
+    padding:10px;
+    margin-bottom:10px;
+    font-weight:900;
+    &:hover{
+        cursor:pointer;
+        background: #434b57;
+        color:#f9f9f9
+    }
+}
